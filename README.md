@@ -23,4 +23,14 @@ The largest dataset with 455 languages is available [here](https://drive.google.
 
 # Inference
 
-The final model is stored in [model link](https://drive.google.com/file/d/1-8d412OfxwYW5gjw4TsiiyONGez0HhAV/view?usp=drive_link). Please download it first locally for further usage.
+The main script is containesd in main.py.
+To use main.py, you can run it from the command line and provide the text as an argument like this:
+
+```
+python3 main.py --text "Your input text goes here."
+```
+The script will use the downloaded pretrained model to predict the language of the input text and print the predicted language class.
+
+The final model is stored in [model link](https://drive.google.com/file/d/1-8d412OfxwYW5gjw4TsiiyONGez0HhAV/view?usp=drive_link). Please download it first locally for further usage. This model was trained initially on Flores dataset with 176 languages for 4 hours on Tesla T4 GPU. Then finetuned on larger dataset containing 306 languages for 7 hours.
+
+To train the model you can use respective notebooks and run the on Colab GPU.
