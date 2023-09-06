@@ -15,6 +15,11 @@ Predicted language: English
 
 For this specific task, only 306 languages can be detected because of computational limits (training on Colab). However, the combined 455 languages dataset is available and can be readily used for this model as well. The model still can distinguish Tatar and Crimean Tatar!
 
+# Datasets
+
+A custom dataset with 306 languages is available following this [link](https://drive.google.com/file/d/1WTaLUB5oo26QyU_zQTWGhmmfCI4f3LcD/view?usp=sharing). Please download other datasets from respective websites.
+
+
 # Inference
 
 The final model is stored in [model link](https://drive.google.com/file/d/1-8d412OfxwYW5gjw4TsiiyONGez0HhAV/view?usp=drive_link). Please download it first locally for further usage.
