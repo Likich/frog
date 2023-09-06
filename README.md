@@ -17,7 +17,10 @@ For this specific task, only 306 languages can be detected because of computatio
 
 # Datasets
 
-A custom dataset with 306 languages is available following this [link](https://drive.google.com/file/d/1WTaLUB5oo26QyU_zQTWGhmmfCI4f3LcD/view?usp=sharing). Please download other datasets from respective websites.
+To make the analysis easier, some languages were combined into macro-groups. For example, 9 types of Arabic were hardly distinguishable by the model, so they were combined into Arabic (macro).
+
+Flores dataset with macro languages is available following this [link](https://drive.google.com/file/d/1rn_OMO0HGejUVoYUrZ96s7XfiY981gBA/view?usp=sharing). 
+A custom dataset with 306 languages is available following this [link](https://drive.google.com/file/d/1WTaLUB5oo26QyU_zQTWGhmmfCI4f3LcD/view?usp=sharing). 
 The largest dataset with 455 languages is available [here](https://drive.google.com/file/d/1cTIOoM1bhZod1TNXqZPBK24WPgQvfSoj/view?usp=sharing). However it is too large for inference right now.
 
 
