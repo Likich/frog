@@ -9,7 +9,7 @@ This repository contains a comprehensive language classification solution using 
 ```
 > Привет! Меня зовут Лика.
 Predicted language: Russian
-> Hello! My name is Elliott.
+> Hello! My name is Lika.
 Predicted language: English
 ```
 
