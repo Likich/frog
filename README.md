@@ -23,6 +23,9 @@ Flores dataset with macro languages is available following this [link](https://d
 A custom dataset with 306 languages is available following this [link](https://drive.google.com/file/d/1WTaLUB5oo26QyU_zQTWGhmmfCI4f3LcD/view?usp=sharing). 
 The largest dataset with 455 languages is available [here](https://drive.google.com/file/d/1cTIOoM1bhZod1TNXqZPBK24WPgQvfSoj/view?usp=sharing). However it is too large for inference right now.
 
+# Training
+
+Training was performed in google colab using mainly 2 notebooks, that you can find in a respective folder. [First notebook](https://github.com/Likich/frog/blob/main/notebooks/Language_Identification_Training_initial.ipynb) contains training of Multinomial Naive Bayes, Bi-LSTM, BERT with freezing weights and finetunined BERT on Flores dataset using only macro languages (176). [Second notebook](https://github.com/Likich/frog/blob/main/notebooks/Combined_finetuning_ipynb_.ipynb) continues the transfer learning of finetuned BERT model extending classification to 306 languages, however with lower accuracy, but still high for earlier predicted languages. 
 
 # Inference
 
