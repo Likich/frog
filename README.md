@@ -40,3 +40,18 @@ The script will use the downloaded pretrained model to predict the language of t
 The final model is stored in [model link](https://drive.google.com/file/d/1-8d412OfxwYW5gjw4TsiiyONGez0HhAV/view?usp=drive_link). Please download it first locally for further usage. This model was trained initially on Flores dataset with 176 languages for 4 hours on Tesla T4 GPU. Then finetuned on larger dataset containing 306 languages for 7 hours.
 
 To train the model you can use respective notebooks and run the on Colab GPU.
+
+# Models
+
+4 models are presented in this repository. Please download models to the general folder prior to running the code. Here you can find respective links to download necessary models:
+
+[Finetuned_bert_176](https://drive.google.com/file/d/1wBnF6-2CvZWcPCqmVdEdgG7V8MNFsRYa/view?usp=sharing) multilingual bert that was initially trained on 104 languages and now finetuned on 176 dataset. Finetuning for 2 epochs (2 hours). 99% accuracy.
+[Finetuned_bert_306](https://drive.google.com/file/d/1-8d412OfxwYW5gjw4TsiiyONGez0HhAV/view?usp=drive_link) previous model finetuned on 306 languages for 5 epochs (7 hours). 86% accuracy.
+[Naive_Bayes_176](https://drive.google.com/drive/folders/1etNjij2Uf-01xYcuYtrHQBcLqa0Z4Z8a?usp=sharing) predicting 176 languages. 97% accuracy. Missclassifies Japanese completely.
+[Short_text_bert_176](https://drive.google.com/file/d/1lflgIGFuY7J6o5KQN13dYpZmIXDp0bFa/view?usp=sharing) finetuned on texts shorter than 20 characters, achieves 83% accuracy.
+
+Using run.py you can run inference on respective models in each folder. Usage:
+
+```
+python3 models/short_text_bert_176/run.py --text "Your input text goes here."
+```
